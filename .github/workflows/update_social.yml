@@ -12,3 +12,4 @@ jobs:
       - uses: matt-ball/newman-action@v1.0.2
         with:
           collection: postman_collection.json
+          environment: postman_environment.json
