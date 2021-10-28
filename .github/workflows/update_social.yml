@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: matt-ball/newman-action@v1.0.2
         with:
-          collection: postman_collection.json
-          environment: postman_environment.json
+          collection: https://raw.githubusercontent.com/arun-lmnas/blogs/main/postman_collection.json
+          environment: https://raw.githubusercontent.com/arun-lmnas/blogs/main/postman_environment.json
