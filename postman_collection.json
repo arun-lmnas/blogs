@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "1e220e23-1f47-4e45-8155-ec9f35cee589",
+		"name": "LERP Social Update",
+		"description": "This collection is aimed at using in the github action. The Api will make a Post/Update request of type Social Posts to LERP Nectar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Social Media Post Schedule",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "text/plain",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "\"token \" + \"36cf89df7f63f22\" + \":\" + \"82945abaa76f44e\"",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev.nectar.lmnas.com/api/resource/Social%20Media%20Post/{{post-id}}",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"nectar",
+						"lmnas",
+						"com"
+					],
+					"path": [
+						"api",
+						"resource",
+						"Social%20Media%20Post",
+						"{{post-id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Social Media Post Schedule Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test Linked in post\",\n    \"scheduled_time\": \"2021-10-30 16:17:00\",\n    \"post_status\": \"\",\n    \"twitter\": 1,\n    \"linkedin\": 0,\n    \"text\": \"#Test Twitter update from vs code man\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev.nectar.lmnas.com/api/resource/Social%20Media%20Post/{{post-id}}",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"nectar",
+						"lmnas",
+						"com"
+					],
+					"path": [
+						"api",
+						"resource",
+						"Social%20Media%20Post",
+						"{{post-id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "82945abaa76f44e",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "36cf89df7f63f22",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "post-id",
+			"value": "CRM-SMP-2021-10-28-257"
+		}
+	]
+}
