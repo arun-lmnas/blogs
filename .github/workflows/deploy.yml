@@ -48,9 +48,9 @@ jobs:
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: out # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
-
-     
+    
       - name: Newman Action
         uses: matt-ball/newman-action@v1.0.2
         with:
           collection: postman_collection.json
+          reporters: '["emojitrain"]'
