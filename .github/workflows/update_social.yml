@@ -9,7 +9,6 @@ jobs:
   newman:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - uses: matt-ball/newman-action@main
+      - uses: matt-ball/newman-action@v1.0.2
         with:
           collection: postman_collection.json
