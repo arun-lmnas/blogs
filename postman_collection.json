@@ -53,7 +53,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\": \"Test Linked in post\",\n    \"scheduled_time\": \"2021-10-30 16:17:00\",\n    \"post_status\": \"\",\n    \"twitter\": 1,\n    \"linkedin\": 0,\n    \"text\": \"#Test Twitter update from vs code man\"\n}",
+					"raw": "{\n    \"title\": \"Test Linked in post\",\n    \"scheduled_time\": \"2021-10-30 16:17:00\",\n    \"post_status\": \"\",\n    \"twitter\": 1,\n    \"linkedin\": 0,\n    \"text\": \"#Test Twitter update from vs code duing call\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
